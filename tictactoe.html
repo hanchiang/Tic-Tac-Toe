@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Tic Tac Toe</title>
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+
+	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+		<div class="container">
+			
+			<h1 class="heading">Welcome to a simple game of tic tac toe!</h1>		
+
+			<div class="row">
+				<div class="col-md-6">
+					<div id="error" class="alert alert-danger">Choose another tile!</div>		
+				</div>
+			</div>
+						
+			<div class="row">
+				<div class="col-md-8">
+					<table class="table table-borderless">
+						<tr class="row" id="first-row">
+							<td class="cell cell-1"></td>
+							<td class="cell cell-2"></td>
+							<td class="cell cell-3"></td>
+						</tr>
+
+						<tr class="row" id="second-row">
+							<td class="cell cell-4"></td>
+							<td class="cell cell-5"></td>
+							<td class="cell cell-6"></td>
+						</tr>
+
+						<tr class="row" id="third-row">
+							<td class="cell cell-7"></td>
+							<td class="cell cell-8"></td>
+							<td class="cell cell-9"></td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="col-md-4" id="result">
+					<h3 id="winner"></h3>
+					<button class="btn btn-primary btn-lg" id="play-again">Play again?</button>
+				</div>
+			</div><!-- row -->
+
+		</div><!-- container -->
+
+
+
+    	<!-- BOOTSTRAP CORE JAVASCRIPT 
+    	Placed at the end of the document so that the pages load faster !-->
+    	<script src="https://code.jquery.com/jquery-2.2.3.min.js"</script>
+    		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    		<script src="main.js"></script>
+    	</body>
+    	</html>
